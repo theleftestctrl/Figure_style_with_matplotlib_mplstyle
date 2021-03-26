@@ -2,7 +2,7 @@
 Matplotlib style for articles
 ## Use
 ---
-'''shell
+```shell
 import matplotlib.pyplot as plt
 plt.style.use('./article_style.mplstyle')
-'''
+```
