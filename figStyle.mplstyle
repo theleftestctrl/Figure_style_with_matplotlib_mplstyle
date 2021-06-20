@@ -1,30 +1,76 @@
- 
-axes.titlesize : 8
-axes.labelsize : 8
+## USE:
+# import matplotlib.pyplot as plt
+# plt.style.use('./article_style.mplstyle')
+
+## НАСТРОЙКИ РИСУНКА
+
+# РАЗМЕРЫ ПОЛЯ РИСУНКА
+# 1-колоночный рисунок – ширина 3.346 ich (85 mm) (предпочтительно), 3.346 ich (85 mm).
+# 2-колоночный рисунок – ширина 6.299 ich (160 mm) (предпочтительно), 5.905 ich (150 mm), 6.692 ich (170 mm).
+# половина двухколоночного рисунка - 3.149 ich (80 mm) (предпочтительно), 2.952 ich (75 mm), 3.346 ich (85 mm).
+# треть двухколоночного рисунка - 2.228 ich (56.6 mm) (предпочтительно), 2.228 ich (56.6 mm).
+# Высота рисунка - ширина * 0.8 (не строго)
+figure.figsize : 3.346, 3.346  # Размеры в дюймах по горизонтали и вертикали соответственно.
+
+
+# ЛИНИИ
+# Линии графиков – 0.35 pt (предпочтительно); 0.2 pt; 0.25 pt; 0.5 pt; 0.7 pt; 1.0 pt
+lines.linewidth : 0.7
+
+
+# СИМВОЛЫ
+# Толщина линий – 0.2 pt (предпочтительно); 0,15 pt; 0.25 pt;
+# Заливка – белый, светло серый
+lines.markeredgewidth: 0.2
+lines.markerfacecolor: white   # white или (0.7, 0.7, 0.7) (опционально)
+lines.markersize : 3.0
+
+
+# РАЗМЕРЫ ШРИФТОВ
+# 9 pt, bold – обозначения панелей (а), (b), (c)... # Тут может быть использовано в качестве font.size.
+# 8 pt – для подписей на осях рисунков, надписях над рисунками
+# 7 pt – цифры на осях рисунков
+# 7 pt, 8 pt – надписи внутри рисунков
+# 7 pt, 6 pt – надписи в инсетах, на осях и внутри
+font.size: 8            # размер шрифта по умолчанию
+axes.titlesize : 8      # размер шрифта над рисунком
+axes.labelsize : 8      # размер подписи осей
+legend.fontsize: 7      # размер шрифта легенды
+xtick.labelsize : 7     # цифры на осях рисунков
+ytick.labelsize : 7     # цифры на осях рисунков
+
+
+# ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ РИСУНКА
+
+# ЧАСТО ИСПОЛЬЗУЕМЫЕ
+
 axes.axisbelow : False
 axes.labelpad  : 1.0
 
-lines.linewidth : 0.8
-lines.markersize : 3.0
-lines.markeredgewidth: 0.8
-lines.markerfacecolor: white
-
-xtick.labelsize : 7
 xtick.direction : in
-ytick.labelsize : 7
 ytick.direction : in
 
-figure.figsize : 3.8, 2.8
-# 2.7
-figure.autolayout: False
-figure.constrained_layout.use: False
-figure.frameon: False
+# Оси, рамки – 0.2 pt, 0.25pt
+axes.linewidth: 0.25
+xtick.major.width:   0.25     # major tick width in points
+xtick.minor.width:   0.2      # minor tick width in points
+ytick.major.width:   0.25     # major tick width in points
+ytick.minor.width:   0.2      # minor tick width in points
+
+legend.markerscale:   1.0
+legend.handletextpad: 0.2
+legend.handlelength: 1.0
+
+
+# МОЖНО НЕ ТРОГАТЬ
+
+axes.facecolor: None
+
+legend.frameon: False
 
 pdf.fonttype:       42
-
 font.family         : Arial
 font.sans-serif     : Arial
-font.size:    8.0
 mathtext.default: regular
 mathtext.fontset: custom
 mathtext.it: Arial:italic
@@ -32,18 +78,15 @@ mathtext.rm: Arial
 mathtext.bf:  Arial:bold
 mathtext.cal: Arial
 
-legend.markerscale:   1.0
-legend.fontsize:      8
-legend.frameon: False
-legend.handletextpad: 0.0
-legend.handlelength: 1.0
+# figure.autolayout: True
+figure.constrained_layout.use: True
+figure.facecolor:   None
+figure.edgecolor:   None
+figure.frameon:     False
 
 
 
-## USE:
-
-# import matplotlib.pyplot as plt
-# plt.style.use('./article_style.mplstyle')
+## ДРУГИЕ ВОЗМОЖНЫЕ НАСТРОЙКИ И КРАТКОЕ ОПИСАНИЕ НАСТРОЕК ВЫШЕ:
 
 #### MATPLOTLIBRC FORMAT
 
