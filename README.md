@@ -1,5 +1,5 @@
-# Matplotlib_style_for_articles
-Matplotlib style for articles
+# Стандартный стиль рисунков SMLab
+
 ## Использование стиля
 
 ```shell
