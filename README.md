@@ -4,7 +4,7 @@ Matplotlib style for articles
 
 ```shell
 import matplotlib.pyplot as plt
-plt.style.use('./article_style.mplstyle')
+plt.style.use('figStyle.mplstyle')
 ```
 ## Настройка шрифтов
 
