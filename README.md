@@ -1,6 +1,6 @@
 # Matplotlib_style_for_articles
 Matplotlib style for articles
-## Use
+## Использование стиля
 
 ```shell
 import matplotlib.pyplot as plt
