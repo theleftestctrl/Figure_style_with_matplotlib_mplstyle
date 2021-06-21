@@ -98,7 +98,7 @@ ax.yaxis.set_minor_locator(ticker.MultipleLocator(0.25))
 
 # пределы рисования
 ax.set_xlim(left=0.95, right=1.23)
-ax.set_ylim(bottom=-1.25, top=1.75)
+ax.set_ylim(bottom=-1.25, top=1.75) # 1.75
 
 ax.legend(loc='best', labelcolor='markeredgecolor')
 

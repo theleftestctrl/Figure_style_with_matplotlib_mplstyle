@@ -42,7 +42,7 @@ ytick.labelsize : 7     # цифры на осях рисунков
 
 # ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ РИСУНКА
 
-# ЧАСТО ИСПОЛЬЗУЕМЫЕ
+# РЕДКО МЕНЯЮЩИЕСЯ
 
 axes.axisbelow : False
 axes.labelpad  : 1.0
@@ -61,6 +61,11 @@ legend.markerscale:   1.0
 legend.handletextpad: 0.2
 legend.handlelength: 1.0
 
+figure.subplot.right:  0.98    # the right side of the subplots of the figure
+figure.subplot.top:    0.98   # the top of the subplots of the figure
+figure.subplot.left:   0.12  # the left side of the subplots of the figure
+figure.subplot.bottom: 0.105   # the bottom of the subplots of the figure
+
 
 # МОЖНО НЕ ТРОГАТЬ
 
@@ -78,12 +83,8 @@ mathtext.rm: Arial
 mathtext.bf:  Arial:bold
 mathtext.cal: Arial
 
-# figure.autolayout: True
-figure.constrained_layout.use: True
 figure.facecolor:   None
 figure.edgecolor:   None
-figure.frameon:     False
-
 
 
 ## ДРУГИЕ ВОЗМОЖНЫЕ НАСТРОЙКИ И КРАТКОЕ ОПИСАНИЕ НАСТРОЕК ВЫШЕ:
