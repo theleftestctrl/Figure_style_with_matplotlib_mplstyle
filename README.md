@@ -102,7 +102,7 @@ Github repository: [FigureStyle_SMLab](https://github.com/NikitaDmitryuk/FigureS
 
 Одним из самых удобных функционалов является создание *.mplstyle* файлов, в которых можно настроить единый стиль для всех сотрудников нашей лаборатории.
 
-[**Файл 'figStyle_SMLab.mplstyle'**](https://github.com/NikitaDmitryuk/FigureStyle_SMLab/blob/main/figStyle_SMLab.mplstyle) задает все параметры, указанные выше в требованиях к рисункам. Это делает код более локаничным и простым, и позволяет создавать графики с одинавыми параметрами при работе в коллективе.
+[**Файл 'figStyle_SMLab.mplstyle'**](https://github.com/NikitaDmitryuk/FigureStyle_SMLab/blob/main/figStyle_SMLab.mplstyle) задает все параметры, указанные выше в требованиях к рисункам. Это делает код более локоничным и простым, и позволяет создавать графики с одинавыми параметрами при работе в коллективе.
 
 ### Настройка среды
 
