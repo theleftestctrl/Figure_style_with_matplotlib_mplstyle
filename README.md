@@ -102,7 +102,7 @@ Github repository: [FigureStyle_SMLab](https://github.com/NikitaDmitryuk/FigureS
 
 Одним из самых удобных функционалов является создание *.mplstyle* файлов, в которых можно настроить единый стиль для всех сотрудников нашей лаборатории.
 
-[**Файл 'figStyle_SMLab.mplstyle'**](https://github.com/NikitaDmitryuk/FigureStyle_SMLab/blob/main/figStyle_SMLab.mplstyle) задает все параметры, указанные выше в требованиях к рисункам. Это делает код более локаничным и простым, и позволяет создавать графики с одинавыми параметрами для рисунков к статье при работе в коллективе.
+[**Файл 'figStyle_SMLab.mplstyle'**](https://github.com/NikitaDmitryuk/FigureStyle_SMLab/blob/main/figStyle_SMLab.mplstyle) задает все параметры, указанные выше в требованиях к рисункам. Это делает код более локаничным и простым, и позволяет создавать графики с одинавыми параметрами при работе в коллективе.
 
 ### Настройка среды
 
@@ -201,9 +201,9 @@ ax.plot(x2, y2, color='C1', marker='o', linestyle='', label=r'Класс 2 (ка
 
 + label -- Метка для легенды. Форматирование строк c префиксом **r** например *r'$ T_{cp} / T_{tp} = 2.0 $'* указывает на необходимоть компилировать эту строку с использованием Latex.
 
-***Информация по всем параметрам функции *pyplot.plot* в одном [месте](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html).***
-
 + zorder -- приоритет наложения графиков. Лини, у которой данный параметри больше, чем у другой, находится выше. Если параметры одинаковые (по умолчанию), то располагаются в порядке рисования.
+
+***Информация по всем параметрам функции *pyplot.plot* в одном [месте](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html).***
 
 
 **Создание подписей к осям**
@@ -283,7 +283,7 @@ ax.annotate('Text',
 **Горизонтальные и вертикальные линии**
 
 ```python
-ax.hlines(y, x_min, x_max, linestyles='-', color='C7', zorder=1) # горизонтальная линия
+ax.hlines(y, x_min, x_max) # горизонтальная линия
 ax.vlines(x, y_min, y_max)                                       # вертикальные линии
 ```
 

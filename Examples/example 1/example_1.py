@@ -5,7 +5,7 @@ import matplotlib.patches as mpatches
 import matplotlib.lines as mlines
 import matplotlib
 
-plt.style.use('../figStyle_SMLab.mplstyle')
+plt.style.use('../../figStyle_SMLab.mplstyle')
 
 def load_data_from_folder(folder):
     def load(name):
@@ -40,4 +40,4 @@ ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 
 ax.legend(labelcolor='markeredgecolor')
 
-fig.savefig('example.pdf')
+fig.savefig('example_1.pdf')
