@@ -195,11 +195,11 @@ ax.plot(x2, y2, color='C1', marker='o', linestyle='', label=r'Класс 2 (ка
 
 + *color* -- цвет линий / точкек. Стандартные цвета *C0, C1, .. , C9*, также можно задать как *(0.5, 0.5, 0.5)* где от 0 до 1 указаны значения RGB. [Eсть и другие способы и цвета.](https://matplotlib.org/stable/users/dflt_style_changes.html)
 
-+ marker -- Символы точек. Самые часто используемые: 'o' -- полые круги, '' -- сплошная линия без символов. [Все виды символов тут](https://matplotlib.org/stable/api/markers_api.html).
++ marker -- символы точек. Самые часто используемые: 'o' -- полые круги, '' -- сплошная линия без символов. [Все виды символов тут](https://matplotlib.org/stable/api/markers_api.html).
 
-+ linestyle -- Тип соединяющих линий. Часто используемые: '' -- соединения точек нет, '\-' -- сплошная линия, '\-\-' -- штриховая линия. [Все виды линий и создание своих тут](https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html).
++ linestyle -- тип соединяющих линий. Часто используемые: '' -- соединения точек нет, '\-' -- сплошная линия, '\-\-' -- штриховая линия. [Все виды линий и создание своих тут](https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html).
 
-+ label -- Метка для легенды. Форматирование строк c префиксом **r** например *r'$ T_{cp} / T_{tp} = 2.0 $'* указывает на необходимоть компилировать эту строку с использованием Latex.
++ label -- метка для легенды. Форматирование строк c префиксом **r** например *r'$ T_{cp} / T_{tp} = 2.0 $'* указывает на необходимоть компилировать эту строку с использованием Latex.
 
 + zorder -- приоритет наложения графиков. Лини, у которой данный параметри больше, чем у другой, находится выше. Если параметры одинаковые (по умолчанию), то располагаются в порядке рисования.
 
@@ -236,6 +236,7 @@ ax.yaxis.set_minor_locator(ticker.MultipleLocator(1))
 
 ```python
 ax.legend(loc=2, labelcolor='markeredgecolor')
+ax.legend(loc='best', labelcolor=['C0', 'C1'])
 ```
 
 где *loc* -- позиция легенды на графике. Часто используется *loc='best'*; *labelcolor* -- цвет текста (в данном случае по цвету маркеров).
@@ -307,7 +308,7 @@ ax.get_yaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
 **Error bar**
 
 ```python
-ax.errorbar(x, y, err)
+ax.errorbar(x, y, xerr=x_err, yerr=y_err)
 ```
 
 **Множители осей**
