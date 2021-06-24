@@ -21,7 +21,7 @@ lines.linewidth : 0.35
 # СИМВОЛЫ
 # Толщина линий – 0.2 pt (предпочтительно); 0,15 pt; 0.25 pt;
 # Заливка – белый, светло серый
-lines.markeredgewidth: 0.25
+lines.markeredgewidth: 0.2
 lines.markerfacecolor: white   # white или (0.7, 0.7, 0.7) (опционально)
 lines.markersize : 3.0
 
