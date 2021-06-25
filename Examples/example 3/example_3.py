@@ -46,38 +46,36 @@ def plot_phase_diagram(fig, ax, path_data, step, label, markersize, color, max_t
     
     data_fit = load_data('phase_fit.txt')
     
-    fit_tmp_condens = data_fit[:, 0][::step]
-    fit_dens_condens = data_fit[:, 1][::step]
-    extr_tmp_condens = data_fit[:, 2][::step]
-    extr_dens_condens = data_fit[:, 3][::step]
+    fit_tmp_condens = data_fit[:, 0]
+    fit_dens_condens = data_fit[:, 1]
+    extr_tmp_condens = data_fit[:, 2]
+    extr_dens_condens = data_fit[:, 3]
     
-    fit_tmp_gas = data_fit[:, 4][::step]
-    fit_dens_gas = data_fit[:, 5][::step]
-    extr_tmp_gas = data_fit[:, 6][::step]
-    extr_dens_gas = data_fit[:, 7][::step]
+    fit_tmp_gas = data_fit[:, 4]
+    fit_dens_gas = data_fit[:, 5]
+    extr_tmp_gas = data_fit[:, 6]
+    extr_dens_gas = data_fit[:, 7]
     
-    fit_tmp_board = data_fit[:, 8][::step]
-    fit_dens_board = data_fit[:, 9][::step]
-    extr_tmp_board = data_fit[:, 10][::step]
-    extr_dens_board = data_fit[:, 11][::step]
+    fit_tmp_board = data_fit[:, 8]
+    fit_dens_board = data_fit[:, 9]
+    extr_tmp_board = data_fit[:, 10]
+    extr_dens_board = data_fit[:, 11]
     
+    ax.plot(fit_dens_condens, fit_tmp_condens, marker='', linestyle='-', color=color, zorder=3)
+    ax.plot(extr_dens_condens, extr_tmp_condens, marker='', linestyle='--', color=color, zorder=3)
     
-    ax.plot(fit_dens_condens, fit_tmp_condens, marker='', linestyle='-', color=color)
-    ax.plot(extr_dens_condens, extr_tmp_condens, marker='', linestyle='--', color=color)
+    ax.plot(fit_dens_gas, fit_tmp_gas, marker='', linestyle='-', color=color, zorder=3)
+    ax.plot(extr_dens_gas, extr_tmp_gas, marker='', linestyle='--', color=color, zorder=3)
     
-    ax.plot(fit_dens_gas, fit_tmp_gas, marker='', linestyle='-', color=color)
-    ax.plot(extr_dens_gas, extr_tmp_gas, marker='', linestyle='--', color=color)
-    
-    ax.plot(fit_dens_board, fit_tmp_board, marker='', linestyle='-', color=color)
-    ax.plot(extr_dens_board, extr_tmp_board, marker='', linestyle='--', color=color)
-    
-    
+    ax.plot(fit_dens_board, fit_tmp_board, marker='', linestyle='-', color=color, zorder=3)
+    ax.plot(extr_dens_board, extr_tmp_board, marker='', linestyle='--', color=color, zorder=3)
+
     data_cp = load_data('phase_point_cp_tp.txt')
-    
+
     tmp_cp = data_cp[:, 0]
     dens_cp = data_cp[:, 2]
     
-    ax.plot(dens_cp, tmp_cp, marker='*', linestyle='', color=color, markeredgecolor='k', markerfacecolor=color, zorder=3)
+    ax.plot(dens_cp, tmp_cp, marker='*', linestyle='', color=color, markeredgecolor='k', markerfacecolor=color, zorder=4)
 
 
 if __name__ == '__main__':
@@ -85,7 +83,8 @@ if __name__ == '__main__':
     fig, ax = plt.subplots()
     
     plot_phase_diagram(fig=fig, ax=ax, path_data='data/flat_layer', step=2, label='Flat layer', markersize=2, color='C0', max_tmp_plot=1.28)
-    plot_phase_diagram(fig=fig, ax=ax, path_data='data/dbscan', step=2, label='DBSCAN', markersize=2, color='C1', max_tmp_plot=1.28)
+    plot_phase_diagram(fig=fig, ax=ax, path_data='data/dbscan_flat_layer', step=2, label='DBSCAN flat layer', markersize=2, color='C1', max_tmp_plot=1.28)
+    plot_phase_diagram(fig=fig, ax=ax, path_data='data/dbscan', step=4, label='DBSCAN arbitr. config.', markersize=2, color='C2', max_tmp_plot=1.28)
     
     ax.set_xlabel(r'Density, $\rho$')
     ax.set_ylabel(r'Temperature, $T$')
@@ -95,6 +94,6 @@ if __name__ == '__main__':
     ax.yaxis.set_minor_locator(ticker.MultipleLocator(0.04))
     ax.set_xlim(left=0, right=1.04)
     ax.set_ylim(bottom=0.5, top=1.35)
-    ax.legend(loc='best', labelcolor=['C0', 'C1'])
+    ax.legend(loc='best', labelcolor=['C0', 'C1', 'C2'])
     
     fig.savefig('example_3.pdf')
