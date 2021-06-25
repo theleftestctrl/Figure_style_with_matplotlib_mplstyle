@@ -98,7 +98,7 @@ Github repository: [FigureStyle_SMLab](https://github.com/NikitaDmitryuk/FigureS
 
 ---
 
-[**Matplotlib**](https://matplotlib.org/stable/index.html#) -- Удобная библиотека для создания графики, в том числе научной.
+[**Matplotlib**](https://matplotlib.org/stable/index.html#) - удобная библиотека для создания графики, в том числе научной.
 
 Одним из самых удобных функционалов является создание *.mplstyle* файлов, в которых можно настроить единый стиль для всех сотрудников нашей лаборатории.
 
