@@ -1,6 +1,6 @@
 # Стандарт оформления рисунков BMSTU Soft Matter Lab
 
-Autor: [Dmitryuk N.A](https://github.com/NikitaDmitryuk), [Libet P.A]()
+Autor: [Dmitryuk N.A](https://github.com/NikitaDmitryuk), [Stanislav O. Yurchenko](st.yurchenko@mail.ru)
 
 Laboratory: [Soft Matter Group, Bauman MSTU](http://teratech.ru/en)
 
