@@ -43,7 +43,7 @@ rm -i ~/.cache/matplotlib/fontlist*.json
 
 ```python
 import matplotlib.pyplot as plt
-plt.style.use('figStyle_SMLab.mplstyle')
+plt.style.use('figStyle.mplstyle')
 ```
 
 Внутри файла сверху находятся использованные настройки с кратикими комментариями.
