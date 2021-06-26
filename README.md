@@ -10,7 +10,7 @@ Github repository: [Figure_style_with_matplotlib_mplstyle](https://github.com/Ni
 
 Одним из самых удобных функционалов является создание *.mplstyle* файлов, в которых можно настроить единый стиль для всех рисунков.
 
-[**Файл 'figStyle.mplstyle'**](https://github.com/NikitaDmitryuk/Figure_style_with_matplotlib_mplstyle/blob/main/figStyle.mplstyle) задает все параметры, толщины линий и размеры. Это делает код более локоничным и простым, и позволяет создавать графики с одинавыми параметрами при работе в коллективе.
+[**Файл 'figStyle.mplstyle'**](https://github.com/NikitaDmitryuk/Figure_style_with_matplotlib_mplstyle/blob/main/figStyle.mplstyle) задает все параметры, толщины линий и размеры. Это делает код более локоничным и простым, и позволяет создавать графики с одинаковыми параметрами при работе в коллективе.
 
 ### Настройка среды
 
