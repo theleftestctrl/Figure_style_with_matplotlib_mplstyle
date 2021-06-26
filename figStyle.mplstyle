@@ -1,6 +1,6 @@
 ## USE:
 # import matplotlib.pyplot as plt
-# plt.style.use('./article_style.mplstyle')
+# plt.style.use('figStyle.mplstyle')
 
 ## НАСТРОЙКИ РИСУНКА
 
