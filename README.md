@@ -2,11 +2,7 @@
 
 Autor: [Dmitryuk N.A](https://github.com/NikitaDmitryuk)
 
-Github repository: [FigureStyle_SMLab](https://github.com/NikitaDmitryuk/FigureStyle_SMLab)
-
----
-
-## Создание рисунков с использованием Matplotlib
+Github repository: [Figure_style_with_matplotlib_mplstyle](https://github.com/NikitaDmitryuk/Figure_style_with_matplotlib_mplstyle)
 
 ---
 
@@ -14,7 +10,7 @@ Github repository: [FigureStyle_SMLab](https://github.com/NikitaDmitryuk/FigureS
 
 Одним из самых удобных функционалов является создание *.mplstyle* файлов, в которых можно настроить единый стиль для всех рисунков.
 
-[**Файл 'figStyle_SMLab.mplstyle'**](https://github.com/NikitaDmitryuk/FigureStyle_SMLab/blob/main/figStyle_SMLab.mplstyle) задает все параметры, толщины линий и размеры. Это делает код более локоничным и простым, и позволяет создавать графики с одинавыми параметрами при работе в коллективе.
+[**Файл 'figStyle.mplstyle'**](https://github.com/NikitaDmitryuk/Figure_style_with_matplotlib_mplstyle/blob/main/figStyle.mplstyle) задает все параметры, толщины линий и размеры. Это делает код более локоничным и простым, и позволяет создавать графики с одинавыми параметрами при работе в коллективе.
 
 ### Настройка среды
 
@@ -43,7 +39,7 @@ rm -i ~/.cache/matplotlib/fontlist*.json
 
 ### Использование готового стиля
 
-Для использования [файла стиля](https://github.com/NikitaDmitryuk/FigureStyle_SMLab/blob/main/figStyle_SMLab.mplstyle) необходимо добавить следующую строку в программу:
+Для использования [файла стиля](https://github.com/NikitaDmitryuk/Figure_style_with_matplotlib_mplstyle/blob/main/figStyle.mplstyle) необходимо добавить следующую строку в программу:
 
 ```python
 import matplotlib.pyplot as plt
