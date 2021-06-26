@@ -5,7 +5,7 @@ import matplotlib.patches as mpatches
 import matplotlib.lines as mlines
 import matplotlib
 
-plt.style.use('../../figStyle_SMLab.mplstyle')
+plt.style.use('../../figStyle.mplstyle')
 
 def load_data_from_folder(folder):
     def load(name):
