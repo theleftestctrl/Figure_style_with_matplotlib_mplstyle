@@ -59,6 +59,8 @@ plt.style.use('figStyle.mplstyle')
 
 
 ```python
+import numpy as np
+
 def load_data_from_folder(folder):
     def load(name):
         data = []
